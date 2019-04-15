@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+  <meta name="description" content="Menu page restaurant"> 
+  <meta name="keywords" content="Restaurant, food, menu, dishes, breakfast, dinner, lunch, catering, booking, enterier">
+  <meta name="author" content="Toma Selea">
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+              <a href="index.html" class="navbar-item" data-scroll="welcome">
+              Home
+            </a>
+          </div>
+        </div>
+      </nav>
+
+
+      <section class="hero is-medium is-primary is-bold">
+          <div class="hero-body" id="menu-header">
+            
+          </div>
+        </section>
+
+        <div class="columns is-centered">
+
+            <div class="column is-one-fifth sidebar categories">
+              
+  
+
+            </div>
+
+
+            <div class="column">
+              
+
+              <div class="control">
+                <div class="select">
+                  <select class="is-hovered" id="sort">
+                    <option value="name-asc">Name(A-Z)</option>
+                    <option value="name-desc">Name(Z-A)</option>
+                    <option value="price-asc">Price(Low to high)</option>
+                    <option value="price-desc">Price(High to low)</option>
+                  </select>
+                </div>
+              </div>
+
+            <hr>
+              <div id="food">
+                
+              </div>
+            </div>
+
+        </div>
+        <script src='js/jquery.js'></script>
+        <script src="js/menu.js"></script>
+</body>
+</html>

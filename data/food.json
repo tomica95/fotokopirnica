@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Tagliatelle al ragu",
+    "price": "950",
+    "category_id": "1"
+  },
+  {
+    "name": "Pappardelle with boletus",
+    "price": "950",
+    "category_id": "1"
+  },
+  {
+    "name": "Garlic Bread",
+    "price": "305",
+    "category_id": "1"
+  },
+  {
+    "name": "Plate of cheeses",
+    "price": "1320",
+    "category_id": "1"
+  },
+  {
+    "name": "Caesar salad",
+    "price": "710",
+    "category_id": "1"
+  },
+  {
+    "name": "Risotto",
+    "price": "950",
+    "category_id": "1"
+  },
+  {
+    "name": "Salad",
+    "price": "490",
+    "category_id": "1"
+  },
+  {
+    "name": "Mast potatoe",
+    "price": "380",
+    "category_id": "1"
+  },
+  {
+    "name": "Pulled pork",
+    "price": "1800",
+    "category_id": "2"
+  },
+  {
+    "name": "Foie gras 150gr §No 5",
+    "price": "2700",
+    "category_id": "2"
+  },
+  {
+    "name": "T-bone steak",
+    "price": "4400(kg)",
+    "category_id": "2"
+  },
+  {
+    "name": "Duck Breast",
+    "price": "1970",
+    "category_id": "2"
+  },
+  {
+    "name": "BOOM BOOM CHICKEN",
+    "price": "899",
+    "category_id": "2"
+  },
+  {
+    "name": "CHICKEN & CHEESE",
+    "price": "949",
+    "category_id": "2"
+  },
+  {
+    "name": "GRILLED CHICKEN FILLET IN SAUCE WITH ALMOND, MOZZARELLA AND PEPPERS",
+    "price": "1349",
+    "category_id": "2"
+  },
+  {
+    "name": "ROAST BEEF (500g)",
+    "price": "1390",
+    "category_id": "2"
+  },
+  {
+    "name": "Foie gras pâté",
+    "price": "1290",
+    "category_id": "3"
+  },
+  {
+    "name": "Garden vegetables",
+    "price": "590",
+    "category_id": "3"
+  },
+  {
+    "name": "Consommé",
+    "price": "590",
+    "category_id": "3"
+  },
+  {
+    "name": "Broccoli with almonds",
+    "price": "370",
+    "category_id": "3"
+  },
+  {
+    "name": "WHITE LADY",
+    "price": "499",
+    "category_id": "3"
+  },
+  {
+    "name": "BACIO ITALIANO",
+    "price": "499",
+    "category_id": "3"
+  },
+  {
+    "name": "FRUIT PLATE",
+    "price": "499",
+    "category_id": "3"
+  },
+  {
+    "name": "BASMATI RICE WITH WASABI BUTTER",
+    "price": "259",
+    "category_id": "3"
+  }
+]

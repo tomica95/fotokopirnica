@@ -1,0 +1,250 @@
+body {
+  font-family: "open_sans", Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+.header {
+  background-position: center;
+  background-image: url('http://www.restorankovac.com/wp-content/uploads/2012/06/IMG_5309.jpg');
+}
+
+.section {
+  padding: 5%;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+#slider img {
+  display: none;
+}
+
+#slider .show {
+  display: block;
+}
+
+.dish {
+  text-align: center;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.dish a {
+  color: #46484d;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, .98);
+  width: 60%;
+  position: absolute;
+  padding: 5%;
+  top: 40%;
+  left: 20%;
+  margin: auto;
+  z-index: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.dish img {
+  width: 50%;
+  height: auto;
+}
+
+.button:hover+img {
+  -ms-transform: translate(0, -20px);
+  -webkit-transform: translate(0, -20px);
+  transform: translate(0, -20px);
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.dish img {
+  transition: 1s;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+/* MENU END */
+
+
+.working-hours {
+  font-family: 'Buda';
+  margin-top: 10%;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.working-hours p {
+  font-size: 2rem;
+}
+
+/* form start */
+
+.reservation {
+  text-align: center;
+  padding: 70px;
+}
+
+.reservation-form {
+  margin-top: 80px;
+}
+
+#reservation-form input, select, button {
+  text-align: center;
+  padding: .8125em 1em .8125em;
+  height: 3em;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+#reservation-form button {
+	margin-top:30px;
+}
+
+.order {
+    margin: 0 auto;
+    margin-top: 30px;
+	border:1px solid black;
+}
+
+.error {
+	border-color: red;
+}
+
+/* MENU START */
+.sidebar {
+  padding: 5% 0% 5% 5%;
+  margin-top: 50px;
+  border-right: 1px solid black;
+}
+
+.tekst{
+  margin-top:250px;
+  text-align:center;
+}
+
+
+
+/* The container-radio */[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: green;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#food {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+#menu-header {
+  background-position: center;
+  background-image: url('../images/6.jpg');
+}
+.slikaautor{
+	margin-left:50px;
+}
+
+ /* Add a black background color to the top navigation */
+ .topnav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+} 
+/* MENU PAGE END */

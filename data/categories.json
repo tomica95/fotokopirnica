@@ -1,0 +1,24 @@
+[
+
+  {
+    "id": "1",
+    "name": "Breakfast",
+    "image": "images/breakfast.png",
+	"alt":"Breakfast"
+  },
+
+  {
+    "id": "2",
+    "name": "Lunch",
+    "image": "images/lunch.png",
+	"alt":"Lunch"
+  },
+
+  {
+    "id": "3",
+    "name": "Dinner",
+    "image": "images/dinner.png",
+	"alt":"Dinner"
+  }
+
+]
