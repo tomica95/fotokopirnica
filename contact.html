@@ -15,26 +15,31 @@
 </head>
 <body>
 
-  <section>
+  <section class="columns is-desktop">
 
     
-    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ustanicka%203&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+    <div class="mapouter column is-two-thirds"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ustanicka%203&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
 
+	<div class="column is-one-third">
+		<h1 class="title">О НАМА</h1>
+		<p>Адреса</p>
+		<p>Број телефона</p>
+		<p>Имејл</p>
+	</div>
   </section>
 
 
   <section class="section hero is-dark contact">
     <div class="container">
         <div class="header-intro">
-            <h5 class="has-text-centered is-uppercase">Contact</h5>
-            <h6 class="has-text-centered has-text-white">Do you have an idea or simply want to chat?</h6>
-            <h6 class="has-text-centered has-text-white">I'd love to hear from you.</h6>
+            <h5 class="has-text-centered is-uppercase">Контакт</h5>
+            <h6 class="has-text-centered has-text-white">Пошаљите нам поруку</h6>
         </div>
-        <form id="form" accept-charset="UTF-8" action="https://usebasin.com/f/dc73642ac527" method="POST">
+        <form id="form" accept-charset="UTF-8" action="" method="POST">
             <div class="columns is-centered">
                 <div class="column is-half">
                     <div class="field">
-                        <label class="label">Name</label>
+                        <label class="label">Име</label>
                         <div class="control is-expanded">
                             <input class="input is-medium" name="name" id="name" type="text" required>
                         </div>
@@ -42,7 +47,7 @@
                 </div>
                 <div class="column is-half">
                     <div class="field">
-                        <label class="label">Email</label>
+                        <label class="label">И-мејл</label>
                         <div class="control is-expanded">
                             <input class="input is-medium" type="email" id="email" name="email" required>
                         </div>
@@ -52,7 +57,7 @@
             <div class="columns is-centered">
                 <div class="column">
                     <div class="field">
-                        <label class="label">Message</label>
+                        <label class="label">Порука</label>
                         <div class="control is-expanded">
                             <textarea class="textarea is-medium" name="comment" rows="5" required></textarea>
                         </div>
@@ -63,10 +68,7 @@
                 <div class="column is-one-third">
                     <div class="field">
                         <div class="control">
-                            <button class="button is-medium is-rounded g-recaptcha"
-                                    data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"
-                                    data-callback='onSubmit'
-                                    data-badge="inline">Submit</button>
+                            <button>Пошаљи</button>
                         </div>
                     </div>
                 </div>
