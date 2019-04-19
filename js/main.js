@@ -46,7 +46,7 @@ function populateCategories()
       categories.forEach( c => {
         text+= ` 
         <div class="dish column">
-                <a class="button btn-category" href="menu.html" data-id="${c.id}">${c.name}</a>
+                <a class="button btn-category" href="${c.name}.html" data-id="${c.id}">${c.name}</a>
                 <img src="${c.image}" alt="${c.alt}">
             </div>
         `;
@@ -177,7 +177,7 @@ $.ajax({
         </div>
           <div class="columns is-centered">
             <div class="column is-4">
-              <img src='${image.src}' alt="${image.alt}">
+			  <a href='${image.src}' data-lightbox="kancelarijski" data-alt='${image.alt}'><img src='${image.src}' alt='${image.alt}'></a>
             </div>
         `;
       }
@@ -185,7 +185,7 @@ $.ajax({
       {
         text+=`
           <div class="column is-4">
-            <img src='${image.src}' alt="${image.alt}">
+            <a href='${image.src}' data-lightbox="kancelarijski" data-alt='${image.alt}'><img src='${image.src}' alt='${image.alt}'></a>
           </div>
         `;
       }

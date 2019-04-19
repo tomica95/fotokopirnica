@@ -248,3 +248,16 @@ th, td {
   display: none;
 } 
 /* MENU PAGE END */
+
+.contact {
+	margin-top: 50px;
+}
+
+.brendovi {
+	min-height: 300px;
+	background-color: silver;
+}
+
+.materijali {
+	margin-top: 100px;
+}

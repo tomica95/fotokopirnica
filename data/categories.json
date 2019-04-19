@@ -2,21 +2,21 @@
 
   {
     "id": "1",
-    "name": "Breakfast",
+    "name": "Канцеларијски",
     "image": "images/breakfast.png",
 	"alt":"Breakfast"
   },
 
   {
     "id": "2",
-    "name": "Lunch",
+    "name": "Уметнички",
     "image": "images/lunch.png",
 	"alt":"Lunch"
   },
 
   {
     "id": "3",
-    "name": "Dinner",
+    "name": "Школски",
     "image": "images/dinner.png",
 	"alt":"Dinner"
   }
