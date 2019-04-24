@@ -120,46 +120,8 @@ function slider()
 }
 
 
-//LOADING DISHES FOR INDEX MENU
-function loadFood(functionForPopulate)
-{
-  $.ajax({
-    url: "data/food.json",
-    method: "GET",
-    success: function(response)
-    {
-        functionForPopulate(response);
-
-    }
-  })
-}
-// LOADING DISHES END
 
 
-function populateBreakfast(response)
-{
-  let text = `<table>
-                    <tr>
-                      <th>Dish</th>
-                      <th>Price</th>
-                    </tr>
-              `;
-
-      let size = 10;
-      
-      let breakfast = response.slice(0, size).map(food => {
-           text+=`
-           <tr>
-           <td>${food.name}</td>
-           <td>${food.price}</td>
-         </tr>
-           `;
-      })
-
-      text+="</table>";
-
-      $("#food-menu").append(text);
-}
 
 // POPULATE ENTERIER PICS
 $.ajax({
