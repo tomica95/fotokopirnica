@@ -4,21 +4,24 @@
     "id": "1",
     "name": "Канцеларијски",
     "image": "images/breakfast.png",
-	"alt":"Breakfast"
+    "alt":"Канцеларијски материјал",
+    "href":"kancelarijski-materijal"
   },
 
   {
     "id": "2",
     "name": "Уметнички",
     "image": "images/lunch.png",
-	"alt":"Lunch"
+    "alt":"Уметнички материјал",
+    "href":"umetnicki-materijal"
   },
 
   {
     "id": "3",
     "name": "Школски",
     "image": "images/dinner.png",
-	"alt":"Dinner"
+    "alt":"Школски прибор",
+    "href":"skolski-pribor"
   }
 
 ]

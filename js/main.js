@@ -46,7 +46,7 @@ function populateCategories()
       categories.forEach( c => {
         text+= ` 
         <div class="dish column">
-                <a class="button btn-category" href="${c.name}.html" data-id="${c.id}">${c.name}</a>
+                <a class="button btn-category" href="${c.href}.html" data-id="${c.id}">${c.name}</a>
                 <img src="${c.image}" alt="${c.alt}">
             </div>
         `;
