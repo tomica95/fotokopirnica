@@ -193,9 +193,43 @@ $.ajax({
   }
 })
 
-
-
 //end slike umetnicki
+//slike skolski
+$.ajax({
+  url: "data/skolski.json",
+  method: "GET",
+  success: function(images)
+  {
+    let text = "<div class='columns is-centered'>";
+
+    images.forEach((image, index, images) => {
+      
+      if(index != 0 && index % 3 == 0)
+      {
+        text+=`
+        </div>
+          <div class="columns is-centered">
+            <div class="column is-4">
+			  <a href='${image.src}' data-lightbox="kancelarijski" data-alt='${image.alt}'><img src='${image.src}' alt='${image.alt}'></a>
+            </div>
+        `;
+      }
+      else 
+      {
+        text+=`
+          <div class="column is-4">
+            <a href='${image.src}' data-lightbox="kancelarijski" data-alt='${image.alt}'><img src='${image.src}' alt='${image.alt}'></a>
+          </div>
+        `;
+      }
+    })
+
+
+    $("#skolski-pribor").html(text);
+  }
+})
+
+//end slike skolski
 
 // POPULATE FORM FIELDS CLASS
 
