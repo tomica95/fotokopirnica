@@ -158,6 +158,44 @@ $.ajax({
   }
 })
 // PICS END
+//slike umetnicki
+$.ajax({
+  url: "data/umetnicke.json",
+  method: "GET",
+  success: function(images)
+  {
+    let text = "<div class='columns is-centered'>";
+
+    images.forEach((image, index, images) => {
+      
+      if(index != 0 && index % 3 == 0)
+      {
+        text+=`
+        </div>
+          <div class="columns is-centered">
+            <div class="column is-4">
+			  <a href='${image.src}' data-lightbox="kancelarijski" data-alt='${image.alt}'><img src='${image.src}' alt='${image.alt}'></a>
+            </div>
+        `;
+      }
+      else 
+      {
+        text+=`
+          <div class="column is-4">
+            <a href='${image.src}' data-lightbox="kancelarijski" data-alt='${image.alt}'><img src='${image.src}' alt='${image.alt}'></a>
+          </div>
+        `;
+      }
+    })
+
+
+    $("#umetnicke-slike").html(text);
+  }
+})
+
+
+
+//end slike umetnicki
 
 // POPULATE FORM FIELDS CLASS
 
