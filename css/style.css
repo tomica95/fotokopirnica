@@ -286,7 +286,7 @@ th, td {
   font-size: 12px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: rgba(255,255,255,0.2);
+  color:whitesmoke;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.250em;
@@ -323,8 +323,8 @@ th, td {
 }
 @media only screen and (min-width: 1280px) {
   .contain {
-    width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    margin-left:220px;
   }
 }
 @media only screen and (max-width: 1139px) {
