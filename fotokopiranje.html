@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/bulma.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+  <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
   <meta name="description" content="Home page restaurant"> 
   <meta name="keywords" content="Restaurant, food, menu, dishes, breakfast, dinner, lunch, catering, booking, enterier">
   <meta name="author" content="Toma Selea">
   
 </head>
 <body>
+
+
+  <!-- NAV START -->
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
   
@@ -29,9 +33,6 @@
           <a href="index.html" class="navbar-item" data-scroll="slider">
           Почетна
         </a>
-          <a href="fotokopiranje.html" class="navbar-item">
-            Фотокопирање
-          </a>
         <a href="kancelarijski-materijal.html" class="navbar-item">
             Канцеларијски
           </a>
@@ -52,79 +53,21 @@
     </div>
   </nav>
 
-  <section class="columns is-desktop">
 
-    
-    <div class="mapouter column is-two-thirds"><div class="gmap_canvas"><iframe width="100%" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=ustanicka%203&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:350px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:100%;}</style></div>
-
-	<div class="column is-one-third">
-		<h1 class="title">Контакт и адреса</h1>
-		<p>Адреса: Устаничка 3</p>
-    <p>Број телефона: 061/6088 - 566</p>
-    <p>Број телефона: 011/3835 - 110</p>
-    <p>Имејл: s.kopiranac@mts.rs</p>
-    <p>&nbsp;&nbsp;Радно време:</p>
-    <p>Понедељак-Петак: 08:00-20:00</p>
-    <p>Субота: 08:00-17:00</p>
-	</div>
-  </section>
+      <!-- NAV END -->
 
 
-  <section class="section hero is-dark contact">
-    <div class="container">
-        <div class="header-intro">
-            <h5 class="has-text-centered is-uppercase">Контакт</h5>
-            <h6 class="has-text-centered has-text-white">Пошаљите нам поруку</h6>
-        </div>
-        <form id="form" accept-charset="UTF-8" action="send-mail.php" method="POST">
-            <div class="columns is-centered">
-                <div class="column is-half">
-                    <div class="field">
-                        <label class="label">Име</label>
-                        <div class="control is-expanded">
-                            <input class="input is-medium" name="name" id="name" type="text" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-half">
-                    <div class="field">
-                        <label class="label">И-мејл</label>
-                        <div class="control is-expanded">
-                            <input class="input is-medium" type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="columns is-centered">
-                <div class="column">
-                    <div class="field">
-                        <label class="label">Порука</label>
-                        <div class="control is-expanded">
-                            <textarea class="textarea is-medium" name="message" rows="5" required></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="columns is-centered">
-                <div class="column is-one-third">
-                    <div class="field">
-                        <div class="control">
-                            <button name="sendMessageButton">Пошаљи</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</section>
-        
-
-
+<!-- ENTERIER START -->
+<div class="container materijali">
+    <h1 class="title">
+      Фотокопирање
+    </h1>
+    <hr>
+    <div id="fotokopiranje">
       
-
-        
-
-
+    </div>
+  </div>
+  <!-- ENTERIER END -->
 
   <!-- FOOT START -->
   <footer class="footer">
@@ -175,9 +118,10 @@
 <!-- END OF FOOTER -->
 	  
     </footer>
+<script src='js/jquery.js'></script>
   <!-- FOOTER END -->
+	<script src="lightbox2-master/dist/js/lightbox.js"></script>
 </body>
 
-<script src='js/jquery.js'></script>
 <script src="js/main.js"></script>
 </html>
