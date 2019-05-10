@@ -17,18 +17,12 @@
       box-sizing: border-box;
     }
 
-    .container {
-      margin-bottom: 100px;
+    .kolone {
+      display: flex;
     }
-    #drzac {
 
-      width:800px;
-      margin:0 auto;
-      height: 1000px;
-    }
     .kolona {
-      float: left;
-      width: 33.3%;
+      flex: 1;
       padding: 8px;
     }
 
@@ -40,6 +34,7 @@
       -webkit-transition: 0.3s;
       transition: 0.3s;
     }
+
 
     .price:hover {
       box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
@@ -62,21 +57,23 @@
       font-size: 20px;
     }
 
-    .button {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 10px 25px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 18px;
-    }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 900px) {
+
+      .header {
+        background-color: #111;
+        color: white;
+        font-size: 20px;
+      }
+      .kolone {
+        display: block;
+      }
+
       .kolona {
         width: 100%;
       }
     }
+
   </style>
 </head>
 <body>
@@ -131,93 +128,133 @@
 
         
 
-        <!-- FOOD MENU START -->
-        <div class="container section">
-          <div id="drzac">
+<!--3 COLUMNS START-->
+  <div class="container section kolone">
+    <div class="kolona">
+      <ul class="price">
+        <li class="header">Црно бело копирање/штампа</li>
+        <li class="grey">Једнострано</li>
+        <li>1-10 = 10,00 дин</li>
+        <li>11-20 = 8,00 дин</li>
+        <li>21-50 = 6,00 дин</li>
+        <li>51-100 = 5,00 дин</li>
+        <li>Преко 100 = 3,00 дин</li>
+        <li>Преко 500 = 1,50 дин</li>
+        <li>Преко 1000 = 1,80 дин</li>
 
-            <div class="kolona">
-              <ul class="price">
-                <li class="header">Црно бело копирање/штампа</li>
-                <li class="grey">Једнострано</li>
-                <li>1-10 = 10,00 дин</li>
-                <li>11-20 = 8,00 дин</li>
-                <li>21-50 = 6,00 дин</li>
-                <li>51-100 = 5,00 дин</li>
-                <li>Преко 100 = 3,00 дин</li>
-                <li>Преко 500 = 1,50 дин</li>
-                <li>Преко 1000 = 1,80 дин</li>
+      </ul>
+    </div>
 
-              </ul>
-            </div>
+    <div class="kolona">
+      <ul class="price">
+        <li class="header">Црно бело копирање/штампа</li>
+        <li class="grey">Двострано</li>
+        <li>1–10 = 7,50 дин</li>
+        <li>11-20  = 6,00 дин</li>
+        <li>21 -50 =  5,00 дин</li>
+        <li>51 – 100 = 4,00 дин</li>
+        <li>Преко 100 = 2,50 дин</li>
+        <li>Преко 500 = 2,00 дин</li>
+        <li>Преко 1000 = 1,50 дин</li>
+      </ul>
+    </div>
 
-            <div class="kolona">
-              <ul class="price">
-                <li class="header">Црно бело копирање/штампа</li>
-                <li class="grey">Двострано</li>
-                <li>1–10 = 7,50 дин</li>
-                <li>11-20  = 6,00 дин</li>
-                <li>21 -50 =  5,00 дин</li>
-                <li>51 – 100 = 4,00 дин</li>
-                <li>Преко 100 = 2,50 дин</li>
-                <li>Преко 500 = 2,00 дин</li>
-                <li>Преко 1000 = 1,50 дин</li>
-              </ul>
-            </div>
-
-            <div class="kolona">
-              <ul class="price">
-                <li class="header" style="background-color:rgb(46, 24, 146)">Колор копирање/штампа</li>
-                <li class="grey">копирање/штампа</li>
-                <li>1 – 5 = 50,00 дин</li>
-                <li>6 – 10 = 40,00 дин</li>
-                <li>11 – 50 = 25,00 дин</li>
-                <li>51 – 100 = 20,00 дин</li>
-                <li>Преко 1000 = 1,80 дин</li>
-                <li>...</li>
-                <li>...</li>
-              </ul>
-            </div>
-
-            <div class="kolona">
-              <ul class="price">
-                <li class="header">Плотовање</li>
-                <li class="grey">Црно бело линијско</li>
-                <li>A0 = 230,00 дин</li>
-                <li>A1 = 150,00 дин</li>
-                <li>A2 = 100,00 дин</li>
-                <li>B1 = 200, 00 дин</li>
-                <li>B2 = 120,00 дин</li>
-              </ul>
-            </div>
-
-            <div class="kolona">
-              <ul class="price">
-                <li class="header" style="background-color:rgb(46, 24, 146)">Плотовање</li>
-                <li class="grey">Колор линијско</li>
-                <li>A0 = 300,00 дин</li>
-                <li>A1 =210,00 дин</li>
-                <li>A2 = 140,00 дин</li>
-                <li>B1 = 260,00 дин</li>
-                <li>B2 = 160,00 дин</li>
-              </ul>
-            </div>
+    <div class="kolona">
+      <ul class="price">
+        <li class="header" style="background-color:rgb(46, 24, 146)">Колор копирање/штампа</li>
+        <li class="grey">копирање/штампа</li>
+        <li>1 – 5 = 50,00 дин</li>
+        <li>6 – 10 = 40,00 дин</li>
+        <li>11 – 50 = 25,00 дин</li>
+        <li>51 – 100 = 20,00 дин</li>
+        <li>Преко 1000 = 1,80 дин</li>
+        <li>...</li>
+        <li>...</li>
+      </ul>
+    </div>
+  </div>
+<!--  3 COLUMNS END-->
 
 
-            <div id="dole" class="kolona">
-              <ul class="price">
-                <li class="header">Плотовање</li>
-                <li class="grey">Колор пунк колор(m2)</li>
-                <li>До 50% покривености бојом 1.100,00 дин</li>
-                <li>Преко 50% покривености 1.500,00 дин</li>
-                <li>Преко 10 плотовања попуст 10%</li>
-                <li>...</li>
-              </ul>
-            </div>
+  <!--3 COLUMNS START-->
+  <div class="container section kolone">
+    <div class="kolona">
+      <ul class="price">
+        <li class="header">Плотовање</li>
+        <li class="grey">Црно бело линијско</li>
+        <li>A0 = 230,00 дин</li>
+        <li>A1 = 150,00 дин</li>
+        <li>A2 = 100,00 дин</li>
+        <li>B1 = 200, 00 дин</li>
+        <li>B2 = 120,00 дин</li>
+      </ul>
+    </div>
 
-          </div>
-        </div>
+    <div class="kolona">
+      <ul class="price">
+        <li class="header" style="background-color:rgb(46, 24, 146)">Плотовање</li>
+        <li class="grey">Колор линијско</li>
+        <li>A0 = 300,00 дин</li>
+        <li>A1 =210,00 дин</li>
+        <li>A2 = 140,00 дин</li>
+        <li>B1 = 260,00 дин</li>
+        <li>B2 = 160,00 дин</li>
+      </ul>
+    </div>
 
-        <!-- FOOD MENU END -->
+
+    <div class="kolona">
+      <ul class="price">
+        <li class="header">Плотовање</li>
+        <li class="grey">Колор пунк колор(m2)</li>
+        <li>До 50% покривености бојом 1.100,00 дин</li>
+        <li>Преко 50% покривености 1.500,00 дин</li>
+        <li>Преко 10 плотовања попуст 10%</li>
+        <li>...</li>
+      </ul>
+    </div>
+  </div>
+  <!--  3 COLUMNS END-->
+
+  <!--3 COLUMNS START-->
+  <div class="container section kolone">
+    <div class="kolona">
+      <ul class="price">
+        <li class="header">Плотовање</li>
+        <li class="grey">Црно бело линијско</li>
+        <li>A0 = 230,00 дин</li>
+        <li>A1 = 150,00 дин</li>
+        <li>A2 = 100,00 дин</li>
+        <li>B1 = 200, 00 дин</li>
+        <li>B2 = 120,00 дин</li>
+      </ul>
+    </div>
+
+    <div class="kolona">
+      <ul class="price">
+        <li class="header" style="background-color:rgb(46, 24, 146)">Плотовање</li>
+        <li class="grey">Колор линијско</li>
+        <li>A0 = 300,00 дин</li>
+        <li>A1 =210,00 дин</li>
+        <li>A2 = 140,00 дин</li>
+        <li>B1 = 260,00 дин</li>
+        <li>B2 = 160,00 дин</li>
+      </ul>
+    </div>
+
+
+    <div class="kolona">
+      <ul class="price">
+        <li class="header">Плотовање</li>
+        <li class="grey">Колор пунк колор(m2)</li>
+        <li>До 50% покривености бојом 1.100,00 дин</li>
+        <li>Преко 50% покривености 1.500,00 дин</li>
+        <li>Преко 10 плотовања попуст 10%</li>
+        <li>...</li>
+      </ul>
+    </div>
+  </div>
+  <!--  3 COLUMNS END-->
 
 
 
@@ -225,8 +262,9 @@
 
 
 
-  <!-- FOOT START -->
-  <footer class="footer">
+
+  <!-- FOOTER START -->
+<!--  <footer class="footer">-->
 
     <!-- FOOTER START -->
     <div class="footer">
@@ -273,7 +311,7 @@
     </div>
     <!-- END OF FOOTER -->
 
-  </footer>
+<!--  </footer>-->
   <!-- FOOTER END -->
 </body>
 
