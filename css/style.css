@@ -3,6 +3,18 @@ body {
   line-height: 1.4;
 }
 
+.flex-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.brand {
+  flex: 1;
+  margin: 20px;
+}
+
 .header {
   background-position: center;
 }
@@ -336,6 +348,13 @@ th, td {
   }
 }
 @media only screen and (max-width: 950px) {
+  .flex-container{
+    display: block;
+  }
+  .brand {
+    display:block;
+    width: 50%;
+  }
   .footer .col {
     width: 33%;
   }
