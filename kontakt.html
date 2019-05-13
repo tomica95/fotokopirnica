@@ -257,14 +257,14 @@ input:focus, textarea:focus, keygen:focus, select:focus {
             </div>
             <div class="sec2contactform">
               <h3 class="sec2frmtitle">Контактирајте нас</h3>
-              <form action="">
+              <form action="send-mail.php" method="POST">
                 <div class="clearfix">
                   <input class="col2 first" type="text" name="name" placeholder="Ваше име и презиме">
                   <input class="col2 last" type="text" name="email" placeholder="Ваш Email">
                 </div>
                 
                 <div class="clearfix">
-                  <textarea name="textarea" id="" name="message" cols="30" rows="7">Ваша порука...</textarea>
+                  <textarea  id="" name="message" cols="30" placeholder="Ваша порука..." rows="7"></textarea>
                 </div>
                 <div class="clearfix"><input type="submit" name="sendMessageButton" value="Пошаљите"></div>
               </form>

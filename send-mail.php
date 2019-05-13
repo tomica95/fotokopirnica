@@ -33,8 +33,8 @@ try {
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'jellytot95@gmail.com';                 // SMTP username
-    $mail->Password = 'sifra';                           // SMTP password
+    $mail->Username = 'toma.selea.103.14@ict.edu.rs';                 // SMTP username
+    $mail->Password = 'bejbesamoti0203';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
     $mail->SMTPOptions =array(
@@ -45,8 +45,8 @@ try {
         )
     );
     //Recipients
-    $mail->setFrom('jellytot95@gmail.com', 'Poruka sa skolarackopiranac.rs');
-    $mail->addAddress('jellytot95@gmail.com');     // Add a recipient
+    $mail->setFrom('toma.selea.103.14@ict.edu.rs', 'Poruka sa skolarackopiranac.rs');
+    $mail->addAddress('seleatoma@gmail.com');     // Add a recipient
    
    
     
@@ -56,7 +56,7 @@ try {
     $mail->Body    = 'Ime: '.$username . ' koji ima e-mail: '.$email. ' zeli da pita: '.$message;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     $mail->send();
-    echo 'Poruka je poslata';
+    header('Location:kontakt.html');
 } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
 }
