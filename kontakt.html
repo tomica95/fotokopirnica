@@ -70,11 +70,11 @@
   </section>
 
 
-  <section class="section hero is-dark contact">
+  <section class="section hero contact">
     <div class="container">
         <div class="header-intro">
-            <h5 class="has-text-centered is-uppercase">Контакт</h5>
-            <h6 class="has-text-centered has-text-white">Пошаљите нам поруку</h6>
+            <h4 class="has-text-centered is-uppercase">Контактирајте нас</h4>
+            
         </div>
         <form id="form" accept-charset="UTF-8" action="send-mail.php" method="POST">
             <div class="columns is-centered">
@@ -82,7 +82,7 @@
                     <div class="field">
                         <label class="label">Име</label>
                         <div class="control is-expanded">
-                            <input class="input is-medium" name="name" id="name" type="text" required>
+                            <input class="input is-medium" name="name" id="name" type="text" placeholder="Унесите Ваше име и презиме" required>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     <div class="field">
                         <label class="label">И-мејл</label>
                         <div class="control is-expanded">
-                            <input class="input is-medium" type="email" id="email" name="email" required>
+                            <input class="input is-medium" type="email" id="email" name="email" placeholder="Унесите Вашу email адресу" required>
                         </div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                     <div class="field">
                         <label class="label">Порука</label>
                         <div class="control is-expanded">
-                            <textarea class="textarea is-medium" name="message" rows="5" required></textarea>
+                            <textarea class="textarea is-medium" name="message" rows="5" placeholder="Унесите Вашу поруку" required></textarea>
                         </div>
                     </div>
                 </div>
